@@ -1,0 +1,616 @@
+    <!DOCTYPE html>
+    <html id="kimsQStart" lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+                <link rel="SHORTCUT ICON" href="//static.leagueoflegends.co.kr/common/img/common/favicon.ico"/>
+        <title>리그 오브 레전드</title>
+        <style id="antiClick">body{display:none !important;}</style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClick = document.getElementById("antiClick");
+                antiClick.parentNode.removeChild(antiClick);
+            } else {
+                top.location = self.location;
+            }
+        </script>
+        
+
+    <link rel="stylesheet" href="//static.leagueoflegends.co.kr/common/css/layout.css?v=1527117983"/>
+    <link rel="stylesheet" href="//static.leagueoflegends.co.kr/common/css/main.css?v=1527117983"/>
+    <link rel="stylesheet" href="//static.leagueoflegends.co.kr/common/css/sub.css?v=1527117983"/>
+    
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/common.js?v=1527117983"></script>
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/prettyCheckable.js?v=1527117983"></script>
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/modernizr.js?v=1527117983"></script>
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/jquery.cookie.js?v=1527117983"></script>
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/aosmgr_common.js"></script>
+    <script type="text/javascript" src="//static.leagueoflegends.co.kr/common/js/ahnlabKeyLogger.js?v=1527117983"></script>
+    
+
+    <!--        <link type="text/css" rel="stylesheet" charset="utf-8" href="--><!--.css--><!--" />-->
+                                <!--    <link type="text/css" rel="stylesheet" charset="utf-8" href="--><!--/_theme/--><!--/theme.css--><!--" />-->
+    </head>
+    <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N98J"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N98J');</script>
+<!-- End Google Tag Manager -->            <!-- (s) content -->
+    <script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/riot-web-cdn/riot-kr/script/web/rso-login-bar-1.0.18.js"></script><script>
+	function getInternetExplorerVersion()
+		// Returns the version of Windows Internet Explorer or a -1
+		// (indicating the use of another browser).
+		{
+			var rv = -1; // Return value assumes failure.
+			if (navigator.appName == 'Microsoft Internet Explorer') {
+				var ua = navigator.userAgent;
+				var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+				if (re.exec(ua) != null)
+					rv = parseFloat(RegExp.$1);
+			}
+			return rv;
+		}
+		var ver = getInternetExplorerVersion();
+
+		if (ver > -1) {
+			if (ver < 10) {
+				var bwhref = document.location.search;
+				if ( bwhref == "?m=esports&mod=global_event" ) {
+					window.location.replace("/?m=esports&mod=global_event_ie");
+				}
+			}
+		}
+</script>
+<style>
+    #header #main-navigation .gs-container > li {
+        min-width: 120px;
+    }
+</style>
+<div id="header"><!-- Header Start -->
+    <a href="http://www.leagueoflegends.co.kr/" id="lol-home-logo">League of Legends</a>
+    <div id="main-navigation">
+        <ul class="gs-container gs-table">
+            <li class="nav-dropdown-2-col nav-dropdown-deep gnb01">
+                <a href="http://www.leagueoflegends.co.kr/?m=news">새소식</a>
+                <ul class="nav-dropdown-trigger">
+                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=news&cate=notice">공지사항</a></li>
+                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=news&cate=update">업데이트</a></li>
+                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=news&cate=champion">챔피언 소식</a></li>
+                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=news&cate=devblog">개발자 블로그</a></li>
+                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=news&cate=event">이벤트/세일</a></li>                    
+                </ul>
+            </li>
+            <li class="gnb02">
+                <a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info">게임정보</a>
+                <ul class="nav-dropdown-trigger"><!-- 2013-07-02 구조 변경 시작 -->
+                    <li class="inner-trigger left-menu"><!-- inner-trigger 클래스 추가 -->
+                        <ul>
+                            <li class="nav-dropdown-2nd-col"><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/champions">챔피언 정보</a></li>
+                            <li class="nav-dropdown-2nd-col"><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/items">아이템 정보</a></li>                            
+                            <li class="nav-dropdown-2nd-col">
+                                <a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/game-modes/">맵 정보</a>
+                                <ul>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/game-modes/summoners-rift/">소환사의 협곡</a></li>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/game-modes/the-twisted-treeline/">뒤틀린 숲</a></li>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/game-modes/howling-abyss/">칼바람 나락</a></li>                                   
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="inner-trigger right-menu"><!-- inner-trigger 클래스 추가 -->
+                        <ul>
+                            <li>
+                                <a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/get-started/">시작하기</a>
+                                <ul>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/get-started/what-is-lol/">리그 오브 레전드란?</a></li>
+                                    <li class=""><a href="http://event.leagueoflegends.co.kr/player-guide" target="_blank">초보자 가이드</a></li>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/get-started/chat-commands/">채팅 명령어</a></li>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/get-started/community-interaction/">커뮤니티 활동</a></li>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/get-started/summoners-code">소환사의 규율</a></li>
+                                    <li class=""><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/get-started/honor/">명예로운 소환사</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-dropdown-2nd-col"><a href="http://www.leagueoflegends.co.kr/?m=download">다운로드</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- 2013-07-02 구조 변경 끝 -->
+            </li>
+            <li class="gnb02">
+                <a href="http://universe.leagueoflegends.com/ko_KR/" target="_blank">유니버스</a>
+            </li>
+            <li class="gnb02">
+                <a href="https://nexus.leagueoflegends.com/ko-kr/" target="_blank">넥서스</a>
+            </li>
+            <li class="gnb02">
+                <a href="http://www.leagueoflegends.co.kr/?m=esports&mod=esports">e스포츠</a>
+                <ul class="nav-dropdown-trigger">
+                    <li class="inner-trigger left-menu"><!-- inner-trigger 클래스 추가 -->
+                        <ul>
+                            <li class="nav-dropdown-2nd-col gnb01">
+                                <a href="http://www.leagueoflegends.co.kr/?m=esports_intro&mod=esports_season">e스포츠 소식</a>
+                                <ul>
+                                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=esports_intro&mod=esports_season">2018 시즌 안내</a></li>
+                                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=esports_intro&mod=esports_schedule">대회 일정</a></li>
+                                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=esports_intro&mod=esports_news">뉴스&amp;공지</a></li>
+									                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="inner-trigger right-menu"><!-- inner-trigger 클래스 추가 -->
+                        <ul>
+                            <li>
+                                <a href="http://www.leagueoflegends.co.kr/?m=esports&mod=intro&cate=1">대회 안내</a>
+                                <ul>
+                                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=esports&mod=intro&cate=1">챔피언스 코리아</a></li>
+                                    <li class=""><a href="http://www.leagueoflegends.co.kr/?m=esports&mod=intro&cate=2">챌린저스 코리아</a></li>
+                                                                                                            <li class=""><a href="http://www.leagueoflegends.co.kr/?m=esports&mod=championshippoint">챔피언십 포인트 랭킹</a></li>
+                                                                        <li class=""><a href="http://event.leagueoflegends.co.kr/msi-2018" target="_blank">2018 MSI</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="http://www.leagueoflegends.co.kr/?m=forum">커뮤니티</a>
+                <ul class="nav-dropdown-trigger">
+                    <li class="nav-dropdown-2nd-col"><a href="http://www.leagueoflegends.co.kr/?m=forum">소환사 광장</a></li>
+                    <li class="nav-dropdown-2nd-col"><a href="http://www.leagueoflegends.co.kr/?m=fansite">공식 팬사이트</a></li>
+                </ul>
+            </li>
+            <li class="gnb02">
+                <a>소셜 미디어</a>
+                <ul class="nav-dropdown-trigger">
+                    <li class="inner-trigger left-menu">
+                        <ul>
+                            <li class="nav-dropdown-2nd-col"><a href="https://www.youtube.com/channel/UCooLkG0FfrkPBQsSuC95L6w" target="_blank">유투브</a></li>
+                            <li class="nav-dropdown-2nd-col"><a href="https://www.facebook.com/LeagueofLegendsKor/" target="_blank">페이스북</a></li>
+                            <li class="nav-dropdown-2nd-col"><a href="http://tv.naver.com/lolkorea" target="_blank">네이버TV</a></li>
+                            <li class="nav-dropdown-2nd-col"><a href="https://www.twitch.tv/Riotgames_Korea" target="_blank">트위치 방송국</a></li>
+                        </ul>
+                    </li>
+                    <!--<li class="nav-dropdown-2nd-col"><a href="http://www.leagueoflegends.co.kr/?m=multimedia&cate=fanmedia">팬 아트워크</a></li>-->
+                </ul>
+            </li>
+            <li class="">
+                <a href="http://matchhistory.leagueoflegends.co.kr/ko/">대전기록</a>
+                <ul class="nav-dropdown-trigger">
+                    <li class="nav-dropdown-2nd-col"><a href="http://matchhistory.leagueoflegends.co.kr/ko/">소환사 검색</a></li>
+                    <li class="nav-dropdown-2nd-col"><a href="http://matchhistory.leagueoflegends.co.kr/ko/#page/faq">자주하는 질문들</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a href="http://www.leagueoflegends.co.kr/?m=download" id="play-for-free">게임 다운로드</a>
+</div><!-- Header End -->
+
+<div class="backdrop"></div>
+<!-- Breadcrumbs Start -->
+<div id="breadcrumbs"><!-- Breadcrumbs Start -->
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li><a href="/?m=news">새소식</a></li>
+    </ol>
+    <h1>공지사항</h1>
+</div><!-- Breadcrumbs End -->
+<div class="section-wrapper section-wrapper-primary"><!-- Section-Wrapper Start -->
+    <div class="section-wrapper-content">
+        <div class="section-wrapper-content-wrapper tabbg"><!-- Contents Start -->
+            <ul class="primary-navigation li-length-5"><!-- Primary-Navi Start -->
+    <li class='first active'><a href="/?m=news&amp;cate=notice">공지사항</a></li>
+    <li ><a href="/?m=news&amp;cate=update">업데이트</a></li>
+    <li ><a href="/?m=news&amp;cate=champion">챔피언 소식</a></li>
+    <li ><a href="/?m=news&amp;cate=devblog">개발자 블로그</a></li>
+    <li ><a href="/?m=news&amp;cate=event">이벤트/세일</a></li>    
+</ul><!-- Primary-Navi Start -->            <div class="contents-wrap subtype"><!-- contents-wrap Start -->
+                <div class="left-contents"><!-- left-contents Start -->
+
+                    <div class="border-box search-box"><!-- search-box Start -->
+                                                    <p class="title-bg-type"><span class="long-text"></span></p>
+                                                <script>
+                            $(document).ready(function() {
+                                $('#search-word').live('keypress', function(e) {
+                                    if (e.which == 13) {/* 13 == enter key@ascii */
+                                        $('.seachbox-btn').click();
+                                        return false;
+                                    }
+                                });
+
+                                $('.seachbox-btn').on('click', function() {
+                                    if($('#schFrm #search-word').val() == '' || $('#schFrm #search-word').val().length < 2){
+                                        alert('검색어를 2자 이상 입력하세요');
+                                        return false;
+                                    }else{
+                                        location.href = "/?" + "m=news&cate=notice" + "&schwrd=" + encodeURIComponent($('#schFrm #search-word').val());
+                                        return false;
+                                    }
+                                });
+                            });
+                        </script>
+                        <div class="search-form01">
+                            <form name="schFrm" id="schFrm">
+                                <fieldset>
+                                    <input type="text" name="schwrd" id="search-word" class="inputblank" title="검색어를 입력하세요" value="">
+                                    <input type="button" class="seachbox-btn" value="검색" title="검색">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div><!-- search-box End -->
+
+                    <div class="border-box">
+                        <div class="contents-table"><!-- ContentsTable Start -->
+                            <table cellspacing="0" class="request-list info-type02">
+                                <caption>목록</caption>
+                                <colgroup>
+                                    <col style="width:*%">
+                                    <col style="width:96px">
+                                    <col style="width:66px">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="first">제목</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">조회수</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258527"><span class='icons top'>top</span>[#2] 격전을 준비하세요! (수정)</a></td>
+                                        <td>2018-05-18</td>
+                                        <td>18,725</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258290"><span class='icons top'>top</span>격전 참여시 불건전 행위에 대한 주의사항 안내(수정)</a></td>
+                                        <td>2018-04-26</td>
+                                        <td>34,473</td>
+                                    </tr>
+                                                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258794">대리 게임 등 적발 현황 263차 안내</a></td>
+                                        <td>2018-06-08</td>
+                                        <td>5,315</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258788">부정행위 프로그램 제재 현황 안내</a></td>
+                                        <td>2018-06-08</td>
+                                        <td>2,109</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258785">6월 2차 소환사 문화재지킴이 모집 안내</a></td>
+                                        <td>2018-06-08</td>
+                                        <td>2,008</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258782">일부 클라이언트 오류 현상에 대한 안내 (정상화)</a></td>
+                                        <td>2018-06-06</td>
+                                        <td>10,134</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258776">6월 6일(수) 서버 점검 안내 (완료)</a></td>
+                                        <td>2018-06-05</td>
+                                        <td>40,423</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258761">PBE 인사이드 20화(8.12 패치 편) 방송 안내</a></td>
+                                        <td>2018-06-04</td>
+                                        <td>9,195</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258758">다시 돌아온 격전! 얼불져스 6/5(화) 방송 일정 안내</a></td>
+                                        <td>2018-06-03</td>
+                                        <td>14,292</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258755">1일 격전 테스트에 참여해 주세요</a></td>
+                                        <td>2018-06-03</td>
+                                        <td>16,441</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258743">대리 게임 등 적발 현황 262차 안내</a></td>
+                                        <td>2018-06-01</td>
+                                        <td>3,222</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="tleft"><a href="/?m=news&amp;cate=notice&amp;mod=view&amp;schwrd=&amp;p=1&amp;idx=258737">부정행위 프로그램 제재 현황 안내</a></td>
+                                        <td>2018-06-01</td>
+                                        <td>1,219</td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div><!-- ContentsTable End -->
+                    </div>
+                    <div class="page-navi left-type"><!-- page-navi Start -->
+                        <p class="num-box">
+                                    <div class="page-navi page-white"><!-- page-navi Start -->
+                        <p class="num-box">
+                							<span>
+                                                                            <em>1</em>
+                                                                                    <a href="?m=news&cate=notice&p=2" >2</a>
+                                                                                    <a href="?m=news&cate=notice&p=3" >3</a>
+                                                                                    <a href="?m=news&cate=notice&p=4" >4</a>
+                                                                                    <a href="?m=news&cate=notice&p=5" >5</a>
+                                                                                    <a href="?m=news&cate=notice&p=6" >6</a>
+                                                                                    <a href="?m=news&cate=notice&p=7" >7</a>
+                                                                                    <a href="?m=news&cate=notice&p=8" >8</a>
+                                                                                    <a href="?m=news&cate=notice&p=9" >9</a>
+                                                                                    <a href="?m=news&cate=notice&p=10" class="end">10</a>
+                                        							</span>
+                                    <a href="?m=news&cate=notice&p=11" class="naviBtn next">다음</a>
+                    <a href="?m=news&cate=notice&p=363" class="naviBtn last">마지막</a>
+                                </p>
+                    </div>
+                        </p>
+                    </div><!-- page-navi End -->
+
+                </div><!-- left-contents End -->
+                <div class="right-contents"><!-- right-contents Start -->
+                    
+<div class="contents-box border-box "><!-- ContentsBox Start -->
+    <ul class="inner-contents tab-board board-box" id="tabbox1"><!-- TabBoard Start -->
+                    <li class="first current">
+                <a href="javascript:;" class="tab-btn">업데이트</a>
+                <div class="inner-contents">
+                    <a href="/?m=news&amp;cate=update" class="more-btn-small">더보기</a>
+                    <ul class="b-list">
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=update&amp;mode=view&amp;idx=258773">
+                                    6월 1주 챔피언 로테이션                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=update&amp;mode=view&amp;idx=258740">
+                                    8.11 추가 패치 노트 (수정)                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=update&amp;mode=view&amp;idx=258707">
+                                    8.11 패치 노트 (수정)                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=update&amp;mode=view&amp;idx=258674">
+                                    5월 5주 챔피언 로테이션                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=update&amp;mode=view&amp;idx=258581">
+                                    5월 4주 챔피언 로테이션                                </a>
+                                                            </li>
+                        <!--                        <li><a href="#">챔피언 리메이크: 혹한의 세주아니 챔피언 리메이크: 혹한의 세주아니 </a> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width2">챔피언 리메이크: 트롤 왕 트런들챔피언 리메이크: 트롤 왕 트런들 </a> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width3">칼바람 나락 리뉴얼 안내 칼바람 나락 리뉴얼 안내 </a> <span class="board-new">new</span> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#">5월 2일(목) 패치 노트 </a></li>-->
+<!--                        <li><a href="#">프렐요드의 비밀이 열립니다</a></li>-->
+                    </ul><!-- 2013-07-08 수정 끝 -->
+                </div>
+            </li>
+
+                    <li class="">
+                <a href="javascript:;" class="tab-btn">챔피언 소식</a>
+                <div class="inner-contents">
+                    <a href="/?m=news&amp;cate=champion" class="more-btn-small">더보기</a>
+                    <ul class="b-list">
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=champion&amp;mode=view&amp;idx=258713">
+                                    챔피언 집중탐구 - 핏빛 항구의 학살자 파이크                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=champion&amp;mode=view&amp;idx=258593">
+                                    용 지배자 스웨인 크로마가 출시되었습니다!                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=champion&amp;mode=view&amp;idx=258530">
+                                    새로운 펄스 건들이 전장에 합류합니다!                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=champion&amp;mode=view&amp;idx=258461">
+                                    파이크, 핏빛 항구의 학살자                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=champion&amp;mode=view&amp;idx=258413">
+                                    모랫빛 코그모를 만나보세요 (수정)                                </a>
+                                                            </li>
+                        <!--                        <li><a href="#">챔피언 리메이크: 혹한의 세주아니 챔피언 리메이크: 혹한의 세주아니 </a> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width2">챔피언 리메이크: 트롤 왕 트런들챔피언 리메이크: 트롤 왕 트런들 </a> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width3">칼바람 나락 리뉴얼 안내 칼바람 나락 리뉴얼 안내 </a> <span class="board-new">new</span> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#">5월 2일(목) 패치 노트 </a></li>-->
+<!--                        <li><a href="#">프렐요드의 비밀이 열립니다</a></li>-->
+                    </ul><!-- 2013-07-08 수정 끝 -->
+                </div>
+            </li>
+
+            </ul><!-- TabBoard End -->
+    <script type="text/javascript">
+        tabbtn(tabbox1);
+
+    </script>
+</div><!-- ContentsBox End -->                    
+<div class="contents-box border-box "><!-- ContentsBox Start -->
+    <ul class="inner-contents tab-board board-box" id="tabbox2"><!-- TabBoard Start -->
+                    <li class="first current">
+                <a href="javascript:;" class="tab-btn">개발자 블로그</a>
+                <div class="inner-contents">
+                    <a href="/?m=news&amp;cate=devblog" class="more-btn-small">더보기</a>
+                    <ul class="b-list">
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=devblog&amp;mode=view&amp;idx=258731">
+                                    컬렉션 탭 업데이트                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=devblog&amp;mode=view&amp;idx=258677">
+                                    2018년 5월 게임플레이에 대한 단상 - 8                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=devblog&amp;mode=view&amp;idx=258632">
+                                    2018년 5월 게임플레이에 대한 단상 - 7                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=devblog&amp;mode=view&amp;idx=258611">
+                                    2019 시즌 랭크 게임 업데이트에 대한 의견                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=devblog&amp;mode=view&amp;idx=258542">
+                                    2018년 5월 게임플레이에 대한 단상 - 6 (수정)                                </a>
+                                                            </li>
+                        <!--                        <li><a href="#">챔피언 리메이크: 혹한의 세주아니 챔피언 리메이크: 혹한의 세주아니 </a> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width2">챔피언 리메이크: 트롤 왕 트런들챔피언 리메이크: 트롤 왕 트런들 </a> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width3">칼바람 나락 리뉴얼 안내 칼바람 나락 리뉴얼 안내 </a> <span class="board-new">new</span> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#">5월 2일(목) 패치 노트 </a></li>-->
+<!--                        <li><a href="#">프렐요드의 비밀이 열립니다</a></li>-->
+                    </ul><!-- 2013-07-08 수정 끝 -->
+                </div>
+            </li>
+
+                    <li class="">
+                <a href="javascript:;" class="tab-btn">이벤트/세일</a>
+                <div class="inner-contents">
+                    <a href="/?m=news&amp;cate=event" class="more-btn-small">더보기</a>
+                    <ul class="b-list">
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=event&amp;mode=view&amp;idx=258791">
+                                    챔피언 및 스킨 세일 안내 (6/8~6/12)                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=event&amp;mode=view&amp;idx=258779">
+                                    챔피언 및 스킨 세일 안내 (6/5~6/9)                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=event&amp;mode=view&amp;idx=258746">
+                                    챔피언 및 스킨 세일 안내 (6/1~6/5)                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=event&amp;mode=view&amp;idx=258725">
+                                    나만의 빌지워터 상점                                </a>
+                                                            </li>
+                                                    <li>
+                                <a class="width0" href="/?m=news&amp;mod=view&amp;cate=event&amp;mode=view&amp;idx=258698">
+                                    [#6] 가라앉은 자들의 저주 이벤트 자세히 알아보기 (수정)                                </a>
+                                                            </li>
+                        <!--                        <li><a href="#">챔피언 리메이크: 혹한의 세주아니 챔피언 리메이크: 혹한의 세주아니 </a> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width2">챔피언 리메이크: 트롤 왕 트런들챔피언 리메이크: 트롤 왕 트런들 </a> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#" class="width3">칼바람 나락 리뉴얼 안내 칼바람 나락 리뉴얼 안내 </a> <span class="board-new">new</span> <span class="board-new">new</span> <span class="board-new">new</span></li>-->
+<!--                        <li><a href="#">5월 2일(목) 패치 노트 </a></li>-->
+<!--                        <li><a href="#">프렐요드의 비밀이 열립니다</a></li>-->
+                    </ul><!-- 2013-07-08 수정 끝 -->
+                </div>
+            </li>
+
+            </ul><!-- TabBoard End -->
+    <script type="text/javascript">
+        tabbtn(tabbox2);
+
+    </script>
+</div><!-- ContentsBox End -->                    
+
+    <ul class="rank-system">
+                                                                                            </ul>
+                </div><!-- contents-wrap End -->
+
+            </div><!-- Contents End -->
+        </div>
+    </div>
+</div><div id="footer"><!-- Footer Start -->
+    <p class="simple-menu" id="footer-nav">
+		<span><a href="http://gameinfo.leagueoflegends.co.kr/ko/game-info/get-started/what-is-lol/">리그 오브 레전드란?</a></span>
+		<span><a href="http://www.leagueoflegends.co.kr/?m=esports&mod=intro&cate=1">e스포츠</a></span>
+	</p>
+    <div class="gs-container vertical-gutter"><!-- Gs-Container Start -->
+		<div id="riot-social" class="new-social"><!-- Riot-Social Start -->
+			<a href="http://www.riotgames.com/" class="riot-logo" target="_blank">riot_games</a>
+			<ul class="social-links">
+				<li class="youtube"><a href="http://www.youtube.com/user/riotgamesinc" target="_blank">Youtube Com</a></li>
+				<li class="facebook"><a href="https://www.facebook.com/LeagueofLegendsKor?fref=ts" target="_blank">facebook</a></li>
+			</ul>
+		</div><!-- Riot-Social End -->
+
+		<div class="default-3-5">
+			<a href="http://www.leagueoflegends.co.kr/?m=download" class="orangebtn inline" id="footer-play-for-free">게임 다운로드</a>
+			<p class="simple-menu" id="footer-sub-nav">
+				<span><a href="http://www.leagueoflegends.co.kr/?m=rules&cid=1">사용약관</a></span>
+				<span><a href="http://www.leagueoflegends.co.kr/?m=rules&cid=2">개인정보 처리방침</a></span>
+				<span><a href="https://signup.leagueoflegends.co.kr/Member/time01.php">게임시간 선택제</a></span>
+				<span><a href="https://signup.leagueoflegends.co.kr/Recruit/recruit.php">채용</a></span>
+				<span><a href="http://www.leagueoflegends.co.kr/?m=contribute">사회공헌</a></span>
+                <br><br>
+				<span><a href="https://www.leagueoflegends.co.kr/?m=riot-store" target="_blank">라이엇 스토어</a></span>
+                <span><a href="http://status.leagueoflegends.com/?ko_KR#kr" target="_blank">서비스 상태</a></span>
+                <span><a href="https://signup.leagueoflegends.co.kr/Customer/faq.php">고객센터</a></span>
+                <span><a href="https://parents.leagueoflegends.co.kr">학부모 전용 고객센터</a></span>
+            </p>
+			<ul class="innerTxt">
+				<li>라이엇게임즈코리아 유한회사 서울특별시 강남구 테헤란로 521 30층 (삼성동, 파르나스타워) (우) 06164     </li>
+				<li class="m_b15">대표전화 : 02-3454-1560 | FAX : 02-3454-1565 (유) 라이엇게임즈코리아 대표자 : 이승현 </li>
+				<li>사업자등록번호 : 120-87-68488 | 통신판매업신고번호 : 제 2011 - 서울강남 - 02718호</li>
+				<li class="m_b15"><a href="http://ftc.go.kr/info/bizinfo/communicationView.jsp?apv_perm_no=2011322016230202718&area1=&area2=&currpage=1&searchKey=04&searchVal=1208768488&stdate=&enddate=" target="_blank">사업자정보확인</a> | 개인정보관리책임자 : 이호성</li>
+				<li>&copy;Riot Games . All rights reserved. </li>
+				<li class="m_b15">League of Legends and Riot games are trademarks or registered trademarks of Riot Games </li>
+				<li class="gameInfo">
+					<div>게임이용에 대한 기본정보</div>
+					<ul class="blind">
+						<li>12세이용가</li>
+						<li>폭력성</li>
+						<li>제명:리그오브레전드</li>
+						<li>상호:(유)라이엇게임즈 코리아</li>
+						<li>이용등급:12세이용가</li>
+						<li>등급분류번호:제CC-NP-110907-009호</li>
+						<li>등급분류일:2011.9.7</li>
+						<li>신고(등록)번호:제 2011-000042호</li>
+					</ul>
+				</li>
+				<li class="end">본 사이트는 나눔고딕과 나눔명조를 사용하였습니다</li>
+			</ul>
+		</div>
+
+
+		<div id="pvp-net-ad">
+			<a class="pvp-net">pvp_dot_net</a>
+			<p class="pvpnet-links simple-menu">
+				<span><a href="https://signup.leagueoflegends.co.kr/Member/join01.php">회원가입</a></span><span><a href="https://signup.leagueoflegends.co.kr/auth/simple/">계정 활성화</a></span>
+		    </p>
+		</div>
+	</div><!-- Gs-Container End -->
+</div><!-- Footer End -->
+
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-5859958-1', 'leagueoflegends.co.kr');
+    ga('send', 'pageview');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})(window,document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '582026288627640');
+fbq('track', "PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=582026288627640&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
+    <!-- (e) content -->
+    
+    <div id="_box_layer_"></div>
+    <div id="_action_layer_"></div>
+    <div id="_hidden_layer_"></div>
+    <div id="_overLayer_" class="hide"></div>
+    <iframe name="_action_frame_news" width="0" height="0" frameborder="0" scrolling="no"></iframe>
+    <script type="text/javascript">
+        //<![CDATA[
+        if (typeof closeMemberLayer !== "undefined") {
+            document.body.onclick = closeMemberLayer;
+            document.onkeydown = closeImgLayer;
+        }
+        //]]>
+    </script>
+            </body>
+</html>
