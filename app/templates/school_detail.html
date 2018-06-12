@@ -1,4 +1,7 @@
 <div>
     <h1>{{ school.name }}</h1>
     <p>{{ school.description }}</p>
+    {% for student in school.student_set_all %}
+        <p>학생 : {{ student }} </p>
+    {% endfor %}
 </div>
